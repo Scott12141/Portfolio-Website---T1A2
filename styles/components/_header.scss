@@ -1,0 +1,42 @@
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #E9F1FA;
+
+    .logo {
+        
+        img {
+            width: 75%;
+            height: 50%;
+            margin-left: 35px;
+            margin-top: 15px;
+        }
+        margin-bottom: 14px;
+        
+        .name {
+            font-size: 28px;
+            text-align: center;
+
+            #first-name {
+                color: #00ABE4;
+            }
+            #middle-name {
+                color: #286181;
+            }
+            #last-name {
+                color: #00ABE4;
+            }
+        }
+    }
+}
+
+.nav-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #E9F1FA;
+}
+header .logo {
+  margin-bottom: 14px;
+}
+header .logo img {
+  width: 75%;
+  height: 50%;
+  margin-left: 35px;
+  margin-top: 15px;
+}
+header .logo .name {
+  font-size: 28px;
+  text-align: center;
+}
+header .logo .name #first-name {
+  color: #00ABE4;
+}
+header .logo .name #middle-name {
+  color: #286181;
+}
+header .logo .name #last-name {
+  color: #00ABE4;
+}
+
+.nav-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: white;
+}/*# sourceMappingURL=index.css.map */
