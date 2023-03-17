@@ -1,1 +1,6 @@
-/*# sourceMappingURL=about.css.map */
+main {
+  background-color: white;
+}
+main section .aboutpic img {
+  width: 100%;
+}/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+body {
+  background-color: #e9f1fa;
+}
+
+main {
+  background-color: #e9f1fa;
+  display: flex;
+  flex-direction: column;
+}
+main section .opener img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+main section .heading {
+  text-align: center;
+}
+main section .heading h1 {
+  color: #286181;
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+  margin: 20px;
+}
+main section .heading h3 {
+  color: #286181;
+  font-family: "Russo One", sans-serif;
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}/*# sourceMappingURL=home.css.map */

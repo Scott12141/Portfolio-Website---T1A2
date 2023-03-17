@@ -14,6 +14,7 @@ header .logo img {
 header .logo .name {
   font-size: 28px;
   text-align: center;
+  margin-top: 0px;
 }
 header .logo .name #first-name {
   color: #00ABE4;
