@@ -5,12 +5,11 @@ header {
 }
 header .logo {
   margin-bottom: 14px;
+  text-align: center;
 }
 header .logo img {
   width: 75%;
-  height: 50%;
-  margin-left: 35px;
-  margin-top: 15px;
+  height: 30%;
 }
 header .logo .name {
   font-size: 28px;
@@ -32,6 +31,28 @@ header .logo .name #last-name {
   justify-content: space-around;
   font-size: 22px;
   margin-bottom: 20px;
+}
+
+footer {
+  background-color: #e9f1fa;
+  display: flex;
+  flex-direction: column;
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+footer .social-media a i {
+  font-size: 30px;
+}
+footer .info p {
+  margin: 5px;
+}
+footer .copyright {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 10px;
 }
 
 body {
