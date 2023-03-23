@@ -1,0 +1,51 @@
+@import "../components/utils";
+
+main {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+
+    .contact {
+        
+
+        h3 {
+            @include headings();
+            
+            font-size: 30px;
+            margin-top: 0px;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            padding: 0px;
+            gap: 16px;
+            margin-top: 0px;
+            margin-bottom: 24px;
+            font-family: 'Rajdhani', sans-serif;
+                a {
+                    font-size: 24px;
+                }
+        }
+        
+    }
+    form {
+        .form-questions {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 24px;    
+        }
+        .form-input {
+            border: 1px solid $secondary-color;
+            border-radius: 4px;
+            outline: none;
+            font-size: 1.2rem;
+            font-family: 'Rajdhani', sans-serif;
+        
+            &:focus {
+                box-shadow: 0 0 8px 3px $secondary-color;
+            }
+        }       
+    }
+}

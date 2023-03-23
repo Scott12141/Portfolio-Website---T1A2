@@ -1,10 +1,10 @@
-
+@import "./utils";
 
 
 header {
     display: flex;
     flex-direction: column;
-    background-color: #E9F1FA;
+    background-color: $primary-color;
 
     .logo {
         
@@ -20,22 +20,40 @@ header {
             margin-top: 0px;
 
             #first-name {
-                color: #00ABE4;
+                color: $secondary-color;
             }
             #middle-name {
-                color: #286181;
+                color: $text-color;
             }
             #last-name {
-                color: #00ABE4;
+                color: $secondary-color;
             }
         }
     }
+    .nav-items {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 22px;
+        margin-bottom: 20px;
+        font-family: 'Rajdhani', sans-serif;
+    }   
 }
 
-.nav-items {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    font-size: 22px;
-    margin-bottom: 20px;
+@media screen and (min-width: $tablet) {
+    header {
+        .logo {
+            img {
+                width: 50%;
+                height: 20%;
+            }
+        }
+
+        .nav-items {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }
+        

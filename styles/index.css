@@ -1,7 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
 header {
   display: flex;
   flex-direction: column;
-  background-color: #E9F1FA;
+  background-color: #e9f1fa;
 }
 header .logo {
   margin-bottom: 14px;
@@ -17,23 +29,34 @@ header .logo .name {
   margin-top: 0px;
 }
 header .logo .name #first-name {
-  color: #00ABE4;
+  color: #00abe4;
 }
 header .logo .name #middle-name {
   color: #286181;
 }
 header .logo .name #last-name {
-  color: #00ABE4;
+  color: #00abe4;
 }
-
-.nav-items {
+header .nav-items {
   width: 100%;
   display: flex;
   justify-content: space-around;
   font-size: 22px;
   margin-bottom: 20px;
+  font-family: "Rajdhani", sans-serif;
 }
 
+@media screen and (min-width: 600px) {
+  header .logo img {
+    width: 50%;
+    height: 20%;
+  }
+  header .nav-items {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 footer {
   background-color: #e9f1fa;
   display: flex;
@@ -42,7 +65,8 @@ footer {
 footer .social-media {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  margin-top: 12px;
 }
 footer .social-media a i {
   font-size: 30px;
@@ -60,6 +84,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0;
   min-height: 100vh;
-  background-color: white;
 }/*# sourceMappingURL=index.css.map */

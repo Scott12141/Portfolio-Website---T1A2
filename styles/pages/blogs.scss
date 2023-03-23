@@ -1,0 +1,43 @@
+@import "../components/utils";
+
+section {
+    margin: 8px;
+    h1 {
+        @include headings();
+        
+        font-size: 70px;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 24px;
+    }
+    .blogs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 8px;
+        padding-right: 8px;
+
+        .blog-post {
+            border: 1px solid $secondary-color;
+            margin-bottom: 24px;
+            font-family: 'Sono', sans-serif;
+        }
+            p {
+                padding: 8px;
+            }
+            .inner-blog {
+                text-align: center;
+                img {
+                    width: 80%;
+                    margin-top: 4px;
+                }
+                h4 {
+                    @include headings();
+                    
+                    font-size: 40px;
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                }
+            }
+    }
+}

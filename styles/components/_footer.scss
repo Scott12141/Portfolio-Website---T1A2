@@ -1,8 +1,8 @@
-
+@import "./utils";
 
 
 footer {
-    background-color: #e9f1fa;
+    background-color: $primary-color;
     display: flex;
     flex-direction: column;
     
@@ -10,7 +10,8 @@ footer {
     .social-media {
         display: flex;
         justify-content: space-around;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
+        margin-top: 12px;
         
         a {
             i {

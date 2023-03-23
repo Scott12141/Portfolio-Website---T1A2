@@ -1,1 +1,43 @@
-/*# sourceMappingURL=contatct.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+main {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+}
+main .contact h3 {
+  color: #286181;
+  font-family: "Russo One", sans-serif;
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+main .contact ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 16px;
+  margin-top: 0px;
+  margin-bottom: 24px;
+  font-family: "Rajdhani", sans-serif;
+}
+main .contact ul a {
+  font-size: 24px;
+}
+main form .form-questions {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+main form .form-input {
+  border: 1px solid #00abe4;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1.2rem;
+  font-family: "Rajdhani", sans-serif;
+}
+main form .form-input:focus {
+  box-shadow: 0 0 8px 3px #00abe4;
+}/*# sourceMappingURL=contatct.css.map */

@@ -1,1 +1,44 @@
-/*# sourceMappingURL=blogs.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+section {
+  margin: 8px;
+}
+section h1 {
+  color: #286181;
+  font-family: "Russo One", sans-serif;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
+section .blogs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+section .blogs .blog-post {
+  border: 1px solid #00abe4;
+  margin-bottom: 24px;
+  font-family: "Sono", sans-serif;
+}
+section .blogs p {
+  padding: 8px;
+}
+section .blogs .inner-blog {
+  text-align: center;
+}
+section .blogs .inner-blog img {
+  width: 80%;
+  margin-top: 4px;
+}
+section .blogs .inner-blog h4 {
+  color: #286181;
+  font-family: "Russo One", sans-serif;
+  font-size: 40px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}/*# sourceMappingURL=blogs.css.map */

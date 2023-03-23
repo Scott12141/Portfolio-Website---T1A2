@@ -1,14 +1,44 @@
-
+@import "../components/utils";
 
 
 main {
     background-color: white;
-
+    margin: 8px;
     section {
         .aboutpic {
+            text-align: center;
             img {
-                width: 100%;
+                width: 90%;
             }
+        }
+        .aboutinfo {
+            font-size: 25px;
+            font-family: 'Sono', sans-serif;
+            color: $text-color;
+        }
+        .resume {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 24px;
+            p {
+                font-size: 25px;
+                font-family: 'Sono', sans-serif;
+                color: $text-color;
+                margin-bottom: 16px;
+            }
+            a {
+                margin-bottom: 16px;
+                width: 40%;
+            }
+                button {
+                    margin-bottom: 16px;
+                    width: 100%;
+                    height: 60px;
+                    background-color: $primary-color;
+                    border-radius: 5px;
+                    font-size: 18px;
+                }
         }
     }
 }
