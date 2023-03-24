@@ -1,17 +1,15 @@
 @import "../components/utils";
 
 main {
-    display: flex;
-    padding: 16px;
-    justify-content: center;
+    
 
-    .contact {
-        
+    .contacts {
+        text-align: center;
 
         h3 {
             @include headings();
             
-            font-size: 30px;
+            font-size: 27px;
             margin-top: 0px;
             margin-bottom: 16px;
         }
@@ -30,22 +28,90 @@ main {
         }
         
     }
-    form {
-        .form-questions {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 24px;    
-        }
-        .form-input {
-            border: 1px solid $secondary-color;
-            border-radius: 4px;
-            outline: none;
-            font-size: 1.2rem;
-            font-family: 'Rajdhani', sans-serif;
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 24px;
         
-            &:focus {
-                box-shadow: 0 0 8px 3px $secondary-color;
+
+        h3 {
+            @include headings();
+            
+            font-size: 26px;
+            margin-top: 0px;
+            margin-bottom: 16px;
+        }
+        form {
+            .form-questions {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 24px;    
             }
-        }       
+            .form-input {
+                width: 110%;
+                border: 1px solid $secondary-color;
+                border-radius: 4px;
+                outline: none;
+                font-size: 1.2rem;
+                font-family: 'Rajdhani', sans-serif;
+            
+                &:focus {
+                    box-shadow: 0 0 8px 3px $secondary-color;
+                }
+            }       
+        }
+    }    
+}
+
+@media screen and (min-width: $tablet) {
+    main {
+        .contact {
+            display: flex;
+            justify-content: space-evenly; 
+
+            .contacts {
+                display: flex;
+                align-items: center;
+                ul {
+                    gap: 24px;
+                    a {
+                        font-size: 30px;
+                    }
+                }
+            }
+            .contact-form {
+                form {
+                    .form-input {
+                        width: 140%;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+@media screen and (min-width: $desktop) {
+    main {
+        .contact {
+            .contacts {
+                display: flex;
+                align-items: center;
+                ul {
+                    gap: 30px;
+                    a {
+                        font-size: 36px;
+                    }
+                }
+            }
+            .contact-form {
+                form {
+                    .form-input {
+                        width: 160%;
+                    }
+                }
+                
+            }
+        }
     }
 }

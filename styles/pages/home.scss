@@ -36,3 +36,28 @@ main {
     }
 }
 
+
+@media screen and (min-width: $tablet) {
+    .opener {
+        margin-bottom: 36px;
+    }
+}
+
+
+@media screen and (min-width: $desktop) {
+    section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+
+        .heading {
+            h1 {
+                font-size: 90px;
+            }
+            h3{
+                font-size: 70px;
+            }
+        }
+    }   
+}

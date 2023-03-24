@@ -21,24 +21,44 @@ section .blogs {
   padding-right: 8px;
 }
 section .blogs .blog-post {
-  border: 1px solid #00abe4;
+  border: 2px solid #00abe4;
   margin-bottom: 24px;
   font-family: "Sono", sans-serif;
 }
-section .blogs p {
+section .blogs .blog-post p {
   padding: 8px;
+  font-size: 20px;
 }
-section .blogs .inner-blog {
+section .blogs .blog-post .inner-blog {
   text-align: center;
 }
-section .blogs .inner-blog img {
+section .blogs .blog-post .inner-blog img {
   width: 80%;
   margin-top: 4px;
 }
-section .blogs .inner-blog h4 {
+section .blogs .blog-post .inner-blog h4 {
   color: #286181;
   font-family: "Russo One", sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   margin-top: 8px;
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 600px) {
+  section .blogs .blog-post p {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  section .blogs {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  section .blogs .blog-post {
+    width: 45%;
+    margin-left: 16px;
+  }
+  section .blogs .blog-post .inner-blog img {
+    width: 75%;
+  }
 }/*# sourceMappingURL=blogs.css.map */

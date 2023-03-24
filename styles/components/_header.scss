@@ -56,4 +56,27 @@ header {
         }
     }
 }
-        
+
+@media screen and (min-width: $desktop) {
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .logo {
+            margin-bottom: 0px;
+            text-align: start;
+
+            .name {
+                margin-bottom: 0px;
+                text-align: start;
+                margin-left: 60px;
+            }
+        }
+        .nav-items {
+            width: 40%;
+        }
+    }
+}
+

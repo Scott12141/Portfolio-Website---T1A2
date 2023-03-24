@@ -18,12 +18,13 @@ section {
         padding-right: 8px;
 
         .blog-post {
-            border: 1px solid $secondary-color;
+            border: 2px solid $secondary-color;
             margin-bottom: 24px;
             font-family: 'Sono', sans-serif;
-        }
+        
             p {
                 padding: 8px;
+                font-size: 20px;
             }
             .inner-blog {
                 text-align: center;
@@ -34,10 +35,41 @@ section {
                 h4 {
                     @include headings();
                     
-                    font-size: 40px;
+                    font-size: 35px;
                     margin-top: 8px;
                     margin-bottom: 8px;
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    section {
+        .blogs {
+            .blog-post {
+                    p {
+                        font-size: 30px;
+                    }
+                
+            }
+        }
+    }
+}
+@media screen and (min-width: $desktop) {
+    section {
+        .blogs {
+            flex-direction: row;
+            flex-wrap: wrap;
+            .blog-post {
+                width: 45%;
+                margin-left: 16px;
+                .inner-blog{
+                    img {
+                        width: 75%;
+                    }
+                }
+            }
+        }
     }
 }

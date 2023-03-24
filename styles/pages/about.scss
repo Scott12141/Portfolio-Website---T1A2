@@ -2,43 +2,80 @@
 
 
 main {
-    background-color: white;
-    margin: 8px;
+    margin: 16px;
+
     section {
         .aboutpic {
             text-align: center;
+            margin-top: 16px;  
+            margin-bottom: 36px;
             img {
-                width: 90%;
+                width: 95%;
             }
         }
         .aboutinfo {
             font-size: 25px;
             font-family: 'Sono', sans-serif;
             color: $text-color;
-        }
-        .resume {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 24px;
-            p {
-                font-size: 25px;
-                font-family: 'Sono', sans-serif;
-                color: $text-color;
-                margin-bottom: 16px;
-            }
-            a {
-                margin-bottom: 16px;
-                width: 40%;
-            }
-                button {
+        
+            .resume {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 24px;
+                p {
+                    font-size: 25px;
+                    font-family: 'Sono', sans-serif;
+                    color: $text-color;
                     margin-bottom: 16px;
-                    width: 100%;
-                    height: 60px;
-                    background-color: $primary-color;
-                    border-radius: 5px;
-                    font-size: 18px;
                 }
+                a {
+                    margin-bottom: 16px;
+                    width: 40%;
+                
+                    button {
+                        margin-bottom: 16px;
+                        width: 100%;
+                        height: 60px;
+                        background-color: $primary-color;
+                        border-radius: 5px;
+                        font-size: 18px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }   
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    main {
+        section {
+            .aboutpic {
+                margin-top: 36px;
+            }
+            .aboutinfo {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    main {
+        section {
+            display: flex;
+            flex-direction: row;
+
+            .aboutpic {
+                img {
+                    width: 90%;
+                }
+            }
+            .aboutinfo {
+                font-size: 18px;
+            }
         }
     }
 }

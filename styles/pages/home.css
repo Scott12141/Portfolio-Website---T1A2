@@ -30,4 +30,24 @@ main section .heading h3 {
   font-size: 50px;
   margin-top: 10px;
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 600px) {
+  .opener {
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  section .heading h1 {
+    font-size: 90px;
+  }
+  section .heading h3 {
+    font-size: 70px;
+  }
 }/*# sourceMappingURL=home.css.map */

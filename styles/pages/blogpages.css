@@ -10,6 +10,7 @@ main section .blogspic {
 }
 main section .blogspic img {
   width: 90%;
+  margin-bottom: 24px;
 }
 main section .blogspic h2 {
   color: #286181;
@@ -23,11 +24,51 @@ main section .bloginfo {
   font-size: 20px;
   font-family: "Sono", sans-serif;
   color: #286181;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 main section .return {
-  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+main section .return a {
+  margin-bottom: 16px;
+  width: 40%;
+}
+main section .return a button {
+  margin-bottom: 16px;
+  width: 100%;
+  height: 60px;
   background-color: #e9f1fa;
-  width: 85%;
-  font-family: "Sono", sans-serif;
-  color: #286181;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  main section .blogspic img {
+    width: 85%;
+  }
+  main section .blogspic h2 {
+    font-size: 60px;
+  }
+  main section .bloginfo {
+    margin-left: 32px;
+    margin-right: 32px;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  main section .blogspic img {
+    width: 75%;
+  }
+  main section .blogspic h2 {
+    font-size: 70px;
+  }
+  main section .bloginfo {
+    margin-left: 64px;
+    margin-right: 64px;
+    font-size: 40px;
+  }
 }/*# sourceMappingURL=blogpages.css.map */

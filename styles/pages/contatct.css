@@ -2,19 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
-main {
-  display: flex;
-  padding: 16px;
-  justify-content: center;
+main .contacts {
+  text-align: center;
 }
-main .contact h3 {
+main .contacts h3 {
   color: #286181;
   font-family: "Russo One", sans-serif;
-  font-size: 30px;
+  font-size: 27px;
   margin-top: 0px;
   margin-bottom: 16px;
 }
-main .contact ul {
+main .contacts ul {
   display: flex;
   flex-direction: column;
   padding: 0px;
@@ -23,21 +21,70 @@ main .contact ul {
   margin-bottom: 24px;
   font-family: "Rajdhani", sans-serif;
 }
-main .contact ul a {
+main .contacts ul a {
   font-size: 24px;
 }
-main form .form-questions {
+main .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+main .contact-form h3 {
+  color: #286181;
+  font-family: "Russo One", sans-serif;
+  font-size: 26px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+main .contact-form form .form-questions {
   display: flex;
   flex-direction: column;
   margin-bottom: 24px;
 }
-main form .form-input {
+main .contact-form form .form-input {
+  width: 110%;
   border: 1px solid #00abe4;
   border-radius: 4px;
   outline: none;
   font-size: 1.2rem;
   font-family: "Rajdhani", sans-serif;
 }
-main form .form-input:focus {
+main .contact-form form .form-input:focus {
   box-shadow: 0 0 8px 3px #00abe4;
+}
+
+@media screen and (min-width: 600px) {
+  main .contact {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  main .contact .contacts {
+    display: flex;
+    align-items: center;
+  }
+  main .contact .contacts ul {
+    gap: 24px;
+  }
+  main .contact .contacts ul a {
+    font-size: 30px;
+  }
+  main .contact .contact-form form .form-input {
+    width: 140%;
+  }
+}
+@media screen and (min-width: 992px) {
+  main .contact .contacts {
+    display: flex;
+    align-items: center;
+  }
+  main .contact .contacts ul {
+    gap: 30px;
+  }
+  main .contact .contacts ul a {
+    font-size: 36px;
+  }
+  main .contact .contact-form form .form-input {
+    width: 160%;
+  }
 }/*# sourceMappingURL=contatct.css.map */
