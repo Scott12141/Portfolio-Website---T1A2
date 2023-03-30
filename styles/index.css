@@ -75,6 +75,8 @@ header .nav-items {
   }
   header .nav-items {
     width: 40%;
+    font-size: 32px;
+    margin-bottom: 8px;
   }
 }
 footer {
