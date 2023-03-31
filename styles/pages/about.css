@@ -17,6 +17,7 @@ main section .aboutinfo {
   font-size: 25px;
   font-family: "Sono", sans-serif;
   color: #286181;
+  margin-top: 16px;
 }
 main section .aboutinfo .resume {
   display: flex;

@@ -16,16 +16,17 @@ section {
         justify-content: space-evenly;
         padding-left: 8px;
         padding-right: 8px;
-
+        // This Component has been styled to present graphical and text content for the user.
         .blog-post {
             border: 2px solid $secondary-color;
             margin-bottom: 24px;
             font-family: 'Sono', sans-serif;
-        
+            // This Component has been styled to present text content for the user.
             p {
                 padding: 8px;
                 font-size: 20px;
             }
+            // This Component has been styled to present graphical content for the user.
             .inner-blog {
                 text-align: center;
                 img {

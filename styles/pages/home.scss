@@ -12,11 +12,13 @@ main {
     padding: 8px;
 
     section {
+        //This Component has been styled to present graphical content for the user.
         .opener {
             img {
                 width: 100%;
             }
         }
+        ////This Component has been styled to present text content for the user.
         .heading{
             text-align: center;
                 h1 {

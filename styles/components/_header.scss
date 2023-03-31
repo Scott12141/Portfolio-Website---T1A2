@@ -5,7 +5,7 @@ header {
     display: flex;
     flex-direction: column;
     background-color: $primary-color;
-
+    // This Component has been styled to present graphical content for the user.
     .logo {
         
         img {
@@ -14,6 +14,7 @@ header {
         }
         margin-bottom: 14px;
         text-align: center;
+        // This Component has been styled to present text content for the user.
         .name {
             font-size: 28px;
             text-align: center;

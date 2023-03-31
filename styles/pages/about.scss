@@ -5,6 +5,7 @@ main {
     margin: 16px;
 
     section {
+        // This Component has been styled to present graphical content for the user.
         .aboutpic {
             text-align: center;
             margin-top: 16px;  
@@ -13,10 +14,12 @@ main {
                 width: 95%;
             }
         }
+        // This Component has been styled to present text content for the user.
         .aboutinfo {
             font-size: 25px;
             font-family: 'Sono', sans-serif;
             color: $text-color;
+            margin-top: 16px;
         
             .resume {
                 display: flex;
